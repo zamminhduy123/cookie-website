@@ -18,7 +18,7 @@ function TextRevealSection() {
           text="BOLD FLAVOR"
           subText="Enjoying a healthy treat"
           textAlign="left"
-          duration={[0.1, 0.15]}
+          duration={[0.1, 0.18]}
         />
       </div>
       <img
@@ -29,7 +29,7 @@ function TextRevealSection() {
       />
       <div className={class_name}>
         <HorizontalScrollText
-          duration={[0.15, 0.3]}
+          duration={[0.18, 0.28]}
           text="PROTEIN PACKED"
           subText="16g of protein"
           textAlign="right"
@@ -38,7 +38,7 @@ function TextRevealSection() {
       </div>
       <div className={class_name}>
         <HorizontalScrollText
-          duration={[0.3, 0.45]}
+          duration={[0.28, 0.40]}
           text="LOW SUGAR"
           subText="less than 8g"
           textAlign="left"
@@ -52,7 +52,7 @@ function TextRevealSection() {
       />
       <div className="w-full h-[40px] md:h-[80px] my-8 md:my-16">
         <HorizontalScrollText
-          duration={[0.45, 0.55]}
+          duration={[0.4, 0.55]}
           text="TRY IT NOW"
           // subText="less than 8g"
           textAlign="center"
