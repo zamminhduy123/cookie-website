@@ -1,23 +1,23 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 import TextRevealSection from "./TextRevealSection";
 
 function ImageSection() {
   const containerRef = useRef(null);
 
-  // useScroll will track the scroll progress within the containerRef
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    // Start animation when container's top hits viewport top
-    // End animation when container's bottom hits viewport bottom
-    offset: ["center center", "end end"],
-  });
+  // // useScroll will track the scroll progress within the containerRef
+  // const { scrollYProgress } = useScroll({
+  //   target: containerRef,
+  //   // Start animation when container's top hits viewport top
+  //   // End animation when container's bottom hits viewport bottom
+  //   offset: ["center center", "end end"],
+  // });
 
   // Transform the scroll progress (0 to 1) into a 'y' position for the sliding section.
   // It will move from 100% (completely below view) to 0% (covering the view).
-  const slideUp = useTransform(scrollYProgress, [0.5, 0.8], ["100%", "0%"]);
+  // const slideUp = useTransform(scrollYProgress, [0.5, 0.8], ["100%", "0%"]);
   // Optional: You can also fade or scale the pinned section as it gets covered
-  const scale = useTransform(scrollYProgress, [0.8, 1], [1, 0.9]);
+  // const scale = useTransform(scrollYProgress, [0.8, 1], [1, 0.9]);
 
   return (
     <div
