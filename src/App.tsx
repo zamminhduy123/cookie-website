@@ -1,0 +1,62 @@
+import "./App.css";
+import Cookie1 from "./assets/cookie-1.png";
+import Cookie2 from "./assets/cookie-2.png";
+import Cookie3 from "./assets/cookie-3.png";
+import ImageSection from "./sections/ImageSection";
+import FlavorSection from "./sections/FlavorSection";
+
+function App() {
+  return (
+    <>
+      <main className="min-h-screen w-full relative">
+        <div
+          id="hero-1"
+          className="flex flex-col items-center justify-center h-screen w-full overflow-hidden bg-white relative"
+        >
+          <div className="flex flex-col items-center justify-center w-full pb-32">
+            <h1 className="font-black text-[#FEB9CC] text-9xl tracking-wide apple-peach">
+              LOWKIE
+            </h1>
+
+            <p className="font-black mt-4 text-center text-[#C41A1B] tracking-widest text-sm md:text-base lg:text-lg">
+              LOW CALORIE
+              COOKIE&nbsp;&nbsp;-&nbsp;&nbsp;SOFT&nbsp;BAKED&nbsp;&nbsp;-&nbsp;&nbsp;PROTEIN&nbsp;PACKED
+            </p>
+          </div>
+
+          <img
+            src={Cookie2}
+            alt="Stack of Lowkie cookies"
+            className="pointer-events-none absolute bottom-0 left-0 w-[40vw] max-w-none select-none "
+          />
+          <img
+            src={Cookie3}
+            alt="Stack of Lowkie cookies"
+            className="pointer-events-none absolute bottom-0 right-15 w-[40vw] max-w-none select-none"
+          />
+          <img
+            src={Cookie1}
+            alt="Stack of Lowkie cookies"
+            style={{ left: "calc(50% - 20vw)"}}
+            className="pointer-events-none absolute bottom-0 2xl:-bottom-10 w-[35vw] max-w-none select-none"
+          />
+        </div>
+
+        <ImageSection />
+        <FlavorSection />
+        <div className="flex flex-col items-center justify-center p-16 w-screen bg-[#4A3629]">
+          <p className="text-6xl apple-peach text-white">
+            guilty free snacking
+          </p>
+          <p className="text-4xl text-[#FEB9CC]">
+            Enjoy your snack without worrying
+          </p>
+        </div>
+
+        {/* <div className="w-screen flex flex-col items-center justify-between h-[20vh]"></div> */}
+      </main>
+    </>
+  );
+}
+
+export default App;

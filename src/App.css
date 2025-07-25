@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Abstract Groovy';
+  src: url('/font/aAbstractGroovy.ttf');
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sugar Peach';
+  src: url('/font/sugar-peachy-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+#root {
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Abstract Groovy', sans-serif;
+}
+
+.apple-peach {
+  font-family: 'Abstract Groovy', sans-serif;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* 
+  The "stage" container.
+  Its height is 200vh, meaning the scroll-based animation will last for a scroll
+  distance equal to one full viewport height (200vh total height - 100vh for the pinned element).
+*/
+.pin-container {
+  position: relative;
+  width: 100%;
+}
+
+/* 
+  SECTION 1: Pinned and Overlapped
+  - `position: sticky` is the magic that holds it in place.
+  - `z-index: 1` ensures it's below the sliding section.
+*/
+.pinned-section {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  /* background: url('https://i.imgur.com/KxOQ0Gg.jpeg') center center / cover no-repeat; */
+  z-index: 1;
+}
+
+/* 
+  SECTION 2: Slides Up
+  - `position: absolute` places it within the pin-container's coordinate system.
+  - `z-index: 2` makes it render on top of the pinned section.
+  - The `y` transform from Framer Motion will control its vertical slide.
+*/
+.sliding-section {
+  position: absolute;
+  top: 0;
+  height: 100vh; /* Takes up the full screen */
+  width: 100%;
+  background-color: #6d3f27; /* Brown flavor color */
+  z-index: 2;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.sliding-section h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #f7b733; /* Yellowish text color */
+  text-transform: uppercase;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ----- Global font ----- */
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
