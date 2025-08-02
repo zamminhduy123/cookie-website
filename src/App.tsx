@@ -1,9 +1,7 @@
 import "./App.css";
-import AnimationComponent from "./sections/MainAnimation";
 
 import MainSection from "./sections/MainSection";
 import MissionSection from "./sections/Mission";
-import Mission2 from "./sections/Mission-2";
 import Product from "./sections/Product";
 import ReviewSection from "./sections/ReviewSection";
 import SellingPointsSection from "./sections/SellingPointSection";
