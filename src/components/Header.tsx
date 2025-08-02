@@ -30,11 +30,11 @@ const Header: React.FC = () => {
 
   const content = (
     <div
-      className={`w-full bg-white apple-peach transition-transform duration-300 ${
+      className={`w-full bg-strawberry transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-end justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <a
           href="/"
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
           aria-label="Lowkie homepage"
         >
           {/* <img src={Logo} alt="Lowkie logo" className="w-12" /> */}
-          <span className="text-2xl font-black text-[#6B3A20] apple-peach">LOWKIE</span>
+          <span className="text-2xl font-black text-crimson apple-peach">LOWKIE</span>
         </a>
 
         {/* Nav links */}
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
             <a
               key={href}
               href={href}
-              className="font-semibold text-[#6B3A20] transition-colors hover:text-[#8e583c]"
+              className="font-semibold text-crimson transition-colors hover:text-white"
             >
               {label}
             </a>
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
             rel="noreferrer"
             aria-label="Instagram"
           >
-            <FaInstagram className="h-5 w-5 text-black hover:text-[#6B3A20]" />
+            <FaInstagram className="h-5 w-5 text-crimson hover:text-white" />
           </a>
           <a
             href="https://facebook.com"
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
             rel="noreferrer"
             aria-label="Facebook"
           >
-            <FaFacebookF className="h-5 w-5 text-[#1877F2] hover:text-[#6B3A20]" />
+            <FaFacebookF className="h-5 w-5 text-crimson hover:text-white" />
           </a>
           <a
             href="https://twitter.com"
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
             rel="noreferrer"
             aria-label="X"
           >
-            <FaXTwitter className="h-5 w-5 text-black hover:text-[#6B3A20]" />
+            <FaXTwitter className="h-5 w-5 text-crimson hover:text-white" />
           </a>
         </div>
       </div>

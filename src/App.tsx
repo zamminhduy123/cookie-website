@@ -1,15 +1,26 @@
 import "./App.css";
-import Cookie1 from "./assets/cookie-1.png";
-import Cookie2 from "./assets/cookie-2.png";
-import Cookie3 from "./assets/cookie-3.png";
-import ImageSection from "./sections/ImageSection";
-import FlavorSection from "./sections/FlavorSection";
+import AnimationComponent from "./sections/MainAnimation";
+
+import MainSection from "./sections/MainSection";
+import MissionSection from "./sections/Mission";
+import Mission2 from "./sections/Mission-2";
+import Product from "./sections/Product";
+import ReviewSection from "./sections/ReviewSection";
+import SellingPointsSection from "./sections/SellingPointSection";
 
 function App() {
   return (
     <>
-      <main className="min-h-screen w-full relative">
-        <div
+      <main className="min-h-screen w-full relative bg-light">
+        {/* <AnimationComponent/> */}
+        <MainSection />
+        <Product/>
+        <MissionSection/>
+        {/* <Mission2/> */}
+
+        <SellingPointsSection/>
+        <ReviewSection/>
+        {/* <div
           id="hero-1"
           className="flex flex-col items-center justify-center h-screen w-full overflow-hidden bg-white relative"
         >
@@ -51,7 +62,7 @@ function App() {
           <p className="text-4xl text-[#FEB9CC]">
             Enjoy your snack without worrying
           </p>
-        </div>
+        </div> */}
 
         {/* <div className="w-screen flex flex-col items-center justify-between h-[20vh]"></div> */}
       </main>

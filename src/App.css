@@ -1,4 +1,14 @@
 @import "tailwindcss";
+@layer theme {
+  :root {
+    --crimson: #9A0002;
+    --strawberry: #FEB3B0;
+    --choco: #4B1E1E;
+    --vanilla: #FFF5F0;
+    --honey: #FBC252;
+    --cocoa: #6D3F27;
+  }
+}
 
 @font-face {
   font-family: 'Abstract Groovy';
@@ -16,17 +26,54 @@
   font-style: normal;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@font-face {
+  font-family: 'Apple Peach';
+  src: url('/font/apple-peach-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 #root {
   position: relative;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: 'Abstract Groovy', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
 }
 
+.animate-marquee-left {
+  animation: marquee-left 300s linear infinite;
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-right {
+  animation: marquee-right 300s linear infinite;
+}
+/* 
+/* ADD: CSS Utilities (fallback if not using Tailwind yet) */
+.bg-crimson { background-color: var(--crimson) !important; }
+.text-crimson { color: var(--crimson) !important; }
+.bg-strawberry { background-color: var(--strawberry) !important; }
+.bg-light { background-color: #FFE7E6 !important; }
+.text-strawberry { color: var(--strawberry) !important; }
+
 .apple-peach {
-  font-family: 'Abstract Groovy', sans-serif;
+  font-family: 'Apple Peach', sans-serif;
 }
 
 canvas {
