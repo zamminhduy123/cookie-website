@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const items = [
   {
@@ -33,7 +34,7 @@ export default function NationalFlavors() {
   return (
     <div className="py-12 px-4 sm:px-8">
       {/* Header */}
-      <div>
+      <div className="sm:mb-0 mb-12">
         <span className="inline-block px-4 py-1 text-sm font-medium bg-pink-200 text-pink-800 rounded-full mb-2">
           Week of Jul 29 - Aug 3
         </span>
@@ -43,7 +44,7 @@ export default function NationalFlavors() {
       {/* Flavor Cards */}
       <div className="flex flex-col gap-10 lg:gap-4 lg:mb-24 mb-8">
         {items.map((item, index) => (
-          <div
+          <motion.div
             key={item.id}
             className={`group relative overflow-visible rounded-3xl transition-all duration-300 flex flex-row ${
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
@@ -51,6 +52,10 @@ export default function NationalFlavors() {
             style={{ backgroundColor: hoverIndex === index ? item.bgColor : "transparent", color: hoverIndex === index ? "#fff" : item.bgColor }}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
             {/* Image */}
             <div className="flex-shrink-0 w-1/2 relative h-40 sm:h-52 lg:h-64">
@@ -64,8 +69,8 @@ export default function NationalFlavors() {
             </div>
 
             {/* Text */}
-            <div className="w-1/2 pl-4 text-left">
-              <h3 className="font-extrabold transition-colors duration-300 text-2xl sm:text-4xl lg:text-6xl mb-2">
+            <div className="w-1/2 pl-4">
+              <h3 className={`font-extrabold ${index % 2 == 0 ? "text-left" : "text-right" } transition-colors duration-300 text-2xl sm:text-4xl lg:text-6xl sm:mb-2`}>
                 {item.name}
               </h3>
 
@@ -77,7 +82,7 @@ export default function NationalFlavors() {
                 )}
               </div>
 
-              <div className={`mt-5 flex ${index % 2 == 0 ? "justify-start" : "justify-end"} sm:gap-3`}>
+              <div className={`sm:mt-5 flex ${index % 2 == 0 ? "justify-start" : "justify-end"} sm:gap-3`}>
                 <button className="sm:border sm:border-black group-hover:border-white text-black group-hover:text-white sm:px-6 py-2 rounded-full text-sm sm:font-semibold transition-colors duration-300 ">
                   Learn More
                 </button>
@@ -88,7 +93,7 @@ export default function NationalFlavors() {
                 )}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

@@ -12,9 +12,9 @@ const slides = [
   },
   {
     img: "/main/cb3.png", // Replace with your image paths
-    title: "Brownies",
-    desc: "FOR DELIVERY",
-    cta: "SHOP BROWNIES",
+    // title: "Brownies",
+    // desc: "FOR DELIVERY",
+    // cta: "SHOP BROWNIES",
   },
 ];
 

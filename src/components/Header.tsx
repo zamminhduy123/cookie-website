@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import {
   FaInstagram,
   FaFacebookF,
-  FaXTwitter
+  // FaXTwitter
 } from "react-icons/fa6"; // make sure you have react‑icons v4+
 
 const Header: React.FC = () => {
@@ -65,7 +65,7 @@ const Header: React.FC = () => {
         {/* Social icons */}
         <div className="flex items-center space-x-5">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/lowkie_cookie"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
@@ -73,21 +73,21 @@ const Header: React.FC = () => {
             <FaInstagram className="h-5 w-5 text-crimson hover:text-white" />
           </a>
           <a
-            href="https://facebook.com"
+            href="https://facebook.com/profile.php?id=61578438907607"
             target="_blank"
             rel="noreferrer"
             aria-label="Facebook"
           >
             <FaFacebookF className="h-5 w-5 text-crimson hover:text-white" />
           </a>
-          <a
+          {/* <a
             href="https://twitter.com"
             target="_blank"
             rel="noreferrer"
             aria-label="X"
           >
             <FaXTwitter className="h-5 w-5 text-crimson hover:text-white" />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
