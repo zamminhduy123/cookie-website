@@ -1,38 +1,41 @@
 import { FaHeart, FaLeaf, FaCube, FaFlask, FaTint } from "react-icons/fa";
 import { motion } from "framer-motion";
-
-const points = [
-  {
-    icon: <FaHeart className="text-2xl sm:text-3xl" />,
-    title: "< 200 cals",
-  },
-  {
-    icon: <FaLeaf className="text-2xl sm:text-3xl" />,
-    title: "16g of protein",
-  },
-  {
-    icon: <FaCube className="text-2xl sm:text-3xl" />,
-    title: "Lower sugar",
-  },
-  {
-    icon: <FaFlask className="text-2xl sm:text-3xl" />,
-    title: "No colors/dyes",
-  },
-  {
-    icon: <FaTint className="text-2xl sm:text-3xl" />,
-    title: "Avocado oil",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function SellingPointsSection() {
+  const { t } = useTranslation();
+
+  const points = [
+    {
+      icon: <FaHeart className="text-2xl sm:text-3xl" />,
+      title: t("selling.<200cals"),
+    },
+    {
+      icon: <FaLeaf className="text-2xl sm:text-3xl" />,
+      title: t("selling.16g"),
+    },
+    {
+      icon: <FaCube className="text-2xl sm:text-3xl" />,
+      title: t("selling.lowSugar"),
+    },
+    {
+      icon: <FaFlask className="text-2xl sm:text-3xl" />,
+      title: t("selling.noColor"),
+    },
+    {
+      icon: <FaTint className="text-2xl sm:text-3xl" />,
+      title: t("selling.avocado"),
+    },
+  ];
+
   return (
     <motion.section
-      className="bg-vanilla py-16 px-4 sm:px-8 bg-white"
+      className="bg-vanilla py-16 px-4 sm:px-8 bg-white h-screen flex items-center justify-center"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 ">
         {/* Text Content */}
         <div className="flex flex-col flex-1">
           <motion.div
@@ -43,7 +46,7 @@ export default function SellingPointsSection() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl w-full font-extrabold text-crimson leading-tight uppercase">
-              Real Ingredients. <br /> Real Benefits.
+              {t("selling.title")}
             </h2>
           </motion.div>
 
@@ -55,8 +58,7 @@ export default function SellingPointsSection() {
             viewport={{ once: true }}
           >
             <p className="mt-4 text-crimson text-base max-w-lg">
-              We built these cookies to do more than taste good—they're made with simple,
-              smart ingredients so you can snack confidently.
+              {t("selling.desc")}
             </p>
 
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-2 gap-6 max-w-md">

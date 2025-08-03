@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const reviews = [
   {
@@ -81,6 +82,8 @@ const reviews = [
 ];
 
 export default function ReviewSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 bg-white overflow-hidden min-h-[70vh]">
       <motion.h2
@@ -90,7 +93,7 @@ export default function ReviewSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        Real People. Real Reviews. Real Good.
+        {t("review.title")}
       </motion.h2>
       <motion.p className="text-center text-crimson max-w-2xl mx-auto mb-12"
         initial={{ opacity: 0, y: 30 }}
@@ -98,7 +101,7 @@ export default function ReviewSection() {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        Don’t just take our word for it—see why thousands of snackers are ditching dry bars and going Chunky.
+        {t("review.desc")}
       </motion.p>
 
       <div className="relative w-full overflow-hidden">

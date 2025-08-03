@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const items = [
   {
@@ -29,6 +30,7 @@ const items = [
 ];
 
 export default function NationalFlavors() {
+  const { t } = useTranslation();
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   return (
@@ -36,9 +38,9 @@ export default function NationalFlavors() {
       {/* Header */}
       <div className="sm:mb-0 mb-12">
         <span className="inline-block px-4 py-1 text-sm font-medium bg-pink-200 text-pink-800 rounded-full mb-2">
-          Week of Jul 29 - Aug 3
+          {t("product.week")}
         </span>
-        <h2 className="text-4xl font-extrabold text-black">National Flavors</h2>
+        <h2 className="text-4xl font-extrabold text-black">{t("product.title")}</h2>
       </div>
 
       {/* Flavor Cards */}
@@ -71,24 +73,24 @@ export default function NationalFlavors() {
             {/* Text */}
             <div className="w-1/2 pl-4">
               <h3 className={`font-extrabold ${index % 2 == 0 ? "text-left" : "text-right" } transition-colors duration-300 text-2xl sm:text-4xl lg:text-6xl sm:mb-2`}>
-                {item.name}
+                {t(`product.${item.id}.name`)}
               </h3>
 
               <div className="hidden sm:block">
                 {item.desc && (
-                  <p className="mt-3 text-gray-600 group-hover:text-white transition-colors duration-300 text-base max-w-xl">
-                    {item.desc}
+                  <p className={`mt-3 text-gray-600 group-hover:text-white transition-colors duration-300 ${index % 2 == 0 ?  "text-left" : "text-right"} text-base max-w-xl`}>
+                    {t(`product.${item.id}.desc`)}
                   </p>
                 )}
               </div>
 
               <div className={`sm:mt-5 flex ${index % 2 == 0 ? "justify-start" : "justify-end"} sm:gap-3`}>
                 <button className="sm:border sm:border-black group-hover:border-white text-black group-hover:text-white sm:px-6 py-2 rounded-full text-sm sm:font-semibold transition-colors duration-300 ">
-                  Learn More
+                  {t("product.learnMore")}
                 </button>
                 {item.desc && (
                   <button className="hidden sm:inline-block bg-white text-black group-hover:bg-black group-hover:text-white px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300">
-                    Order Now
+                    {t("product.orderNow")}
                   </button>
                 )}
               </div>

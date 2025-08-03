@@ -1,21 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import Header from './components/Header.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.tsx";
+import "./i18n";
+import gsap from "gsap";
+// ---- FIX IS HERE ----
+// Import ScrollTrigger and ScrollSmoother from their specific paths
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { BrowserRouter } from "react-router-dom";
 
-// TextReveal.tsx (or a top-level gsap setup file)
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Footer from './components/Footer.tsx'
+// 2. Register BOTH plugins with GSAP
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-// you have to do this once, before you create any ScrollTrigger instances
-gsap.registerPlugin(ScrollTrigger);
-
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Header/>
-    <App />
-    <Footer/>
-  </StrictMode>,
-)
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);

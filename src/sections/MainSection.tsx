@@ -1,28 +1,29 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 
-const slides = [
-  {
-    img: "/main/cb2.png",
-    title: "LOWKIE",
-    desc: "FOR DELIVERY",
-    cta: "SHOP Cookie",
-  },
-  {
-    img: "/main/cb1.png", // Replace with your image paths
-  },
-  {
-    img: "/main/cb3.png", // Replace with your image paths
-    // title: "Brownies",
-    // desc: "FOR DELIVERY",
-    // cta: "SHOP BROWNIES",
-  },
-];
+const AUTOPLAY_SPEED = 4500;
 
-const AUTOPLAY_SPEED = 5000; // 4 seconds
 
 export default function BrownieCarousel() {
+  const { t } = useTranslation();
+
+  const slides = [
+    {
+      img: "/main/cb2.png",
+      title: t("main.title"),
+      desc: t("main.desc"),
+      cta: t("main.cta"),
+    },
+    {
+      img: "/main/cb1.png",
+    },
+    {
+      img: "/main/cb3.png",
+    },
+  ];
+
   const [current, setCurrent] = useState(0);
   const [progress, setProgress] = useState(0);
   const intervalRef = useRef<any>(null);

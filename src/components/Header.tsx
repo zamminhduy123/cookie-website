@@ -1,14 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import ReactDOM from "react-dom";
 import {
   FaInstagram,
   FaFacebookF,
   // FaXTwitter
 } from "react-icons/fa6"; // make sure you have react‑icons v4+
+import LangSwitch from "./LangSwitch"; // Adjust the import path as necessary
+import { useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(true);
   const lastScrollY = useRef(0);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,14 +53,18 @@ const Header: React.FC = () => {
         {/* Nav links */}
         <nav className="hidden space-x-10 md:flex">
           {[
-            { href: "/", label: "Home" },
-            { href: "/products", label: "Products" },
-            { href: "/about", label: "About us" }
+            { href: "/", label: t("header.home") },
+            { href: "/products", label: t("header.products") },
+            { href: "/about", label: t("header.about") }
           ].map(({ href, label }) => (
             <a
               key={href}
               href={href}
-              className="font-semibold text-crimson transition-colors hover:text-white"
+              className={`font-semibold transition-all duration-300 ${
+                location.pathname === href
+                  ? "text-white underline underline-offset-4 scale-105"
+                  : "text-crimson hover:text-white hover:underline hover:underline-offset-4 hover:scale-105"
+              }`}
             >
               {label}
             </a>
@@ -88,6 +97,8 @@ const Header: React.FC = () => {
           >
             <FaXTwitter className="h-5 w-5 text-crimson hover:text-white" />
           </a> */}
+          <span className="h-5 w-[2px] border-r-1 border-black"></span>
+          <LangSwitch/>
         </div>
       </div>
     </div>

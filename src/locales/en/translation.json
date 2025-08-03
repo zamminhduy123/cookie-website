@@ -1,0 +1,75 @@
+{
+    "header": {
+        "home": "Home",
+        "products": "Products",
+        "about": "About us"
+    },
+    "main": {
+        "title": "LOWKIE",
+        "desc": "FOR DELIVERY",
+        "cta": "SHOP Cookie"
+    },
+    "product": {
+        "week": "Week of Jul 29 - Aug 3",
+        "title": "National Flavors",
+        "1": {
+            "name": "Double Chocolate Chip Cookie",
+            "desc": "A gooey cookie packed with milk chocolate chips, topped with semi-sweet chocolate chunks, and finished with a dash of sea salt."
+        },
+        "2": {
+            "name": "Matcha Cheesecake",
+            "desc": "A gooey cookie packed with milk chocolate chips, topped with semi-sweet chocolate chunks, and finished with a dash of sea salt."
+        },
+        "3": {
+            "name": "Cinammon Cookie",
+            "desc": "A gooey cookie packed with milk chocolate chips, topped with semi-sweet chocolate chunks, and finished with a dash of sea salt."
+        },
+        "learnMore": "Learn More",
+        "orderNow": "Order Now"
+    },
+    "qa": {
+        "title": "YOU ASK,",
+        "subtitle": "WE ANSWER!",
+        "q1": {
+            "question": "WHAT MAKES LOWKIE COOKIES SPECIAL?",
+            "answer": "LOWKIE cookies are made with all-natural ingredients, providing a deliciously soft-baked experience without the guilt. Each cookie is packed with 12g of protein and contains less than 300kcal per serving—perfect for a healthy snack or post-workout boost."
+        },
+        "q2": {
+            "question": "HOW MUCH SUGAR IS IN A LOWKIE COOKIE?",
+            "answer": "Each LOWKIE cookie contains just 12g of natural sugar, striking the right balance between taste and nutrition without added preservatives or artificial sweeteners."
+        },
+        "q3": {
+            "question": "CAN KIDS EAT LOWKIE COOKIES?",
+            "answer": "Yes! LOWKIE cookies are kid-friendly and made with wholesome, clean ingredients—no preservatives, no artificial coloring, and no unnecessary additives."
+        },
+        "q4": {
+            "question": "CAN I EAT LOWKIE COOKIES EVERY DAY?",
+            "answer": "Absolutely. With balanced macronutrients, natural ingredients, and a satisfying taste, LOWKIE cookies are a great option for everyday snacking without compromising your diet."
+        },
+        "q5": {
+            "question": "HOW SHOULD I STORE LOWKIE COOKIES?",
+            "answer": "You can store LOWKIE cookies at room temperature for up to 4 days. For longer freshness, refrigerate them for up to 2 weeks or freeze for up to a month. If stored cold, we recommend reheating slightly for the best texture and flavor."
+        },
+        "q6": {
+            "question": "WHAT FLAVORS DO LOWKIE COOKIES COME IN?",
+            "answer": "LOWKIE cookies are available in a variety of indulgent flavors like chocolate chip, double chocolate, and peanut butter—all made with natural ingredients and no compromise on taste."
+        }
+    },
+    "selling": {
+        "<200cals": "< 200 cals",
+        "16g": "16g of protein",
+        "lowSugar": "Lower sugar",
+        "noColor": "No colors/dyes",
+        "avocado": "Avocado oil",
+        "title": "Real Ingredients. Real Benefits.",
+        "desc": "We built these cookies to do more than taste good—they're made with simple, smart ingredients so you can snack confidently."
+    },
+    "review": {
+        "title": "Real People. Real Reviews. Real Good.",
+        "desc": "Don’t just take our word for it—see why thousands of snackers are ditching dry bars and going Lowkie."
+    },
+    "footer": {
+        "rights": "all rights reserved.",
+        "cta": "Order Now"
+    }
+}

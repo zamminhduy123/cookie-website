@@ -61,6 +61,20 @@
   }
 }
 
+#smooth-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+}
+
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+}
+
 .animate-marquee-right {
   animation: marquee-right 300s linear infinite;
 }
@@ -71,6 +85,8 @@
 .bg-strawberry { background-color: var(--strawberry) !important; }
 .bg-light { background-color: #FFE7E6 !important; }
 .text-strawberry { color: var(--strawberry) !important; }
+.border-crimson { border-color: var(--crimson) !important; }
+.border-strawberry { border-color: var(--strawberry) !important; }
 
 .apple-peach {
   font-family: 'Apple Peach', sans-serif;
