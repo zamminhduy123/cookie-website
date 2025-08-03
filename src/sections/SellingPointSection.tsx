@@ -30,7 +30,7 @@ export default function SellingPointsSection() {
 
   return (
     <motion.section
-      className="bg-vanilla py-16 px-4 sm:px-8 bg-white h-screen flex items-center justify-center"
+      className="bg-vanilla py-16 px-4 sm:px-8 bg-white min-h-screen flex items-center justify-center"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
