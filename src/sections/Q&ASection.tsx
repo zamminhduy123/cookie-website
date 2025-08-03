@@ -40,8 +40,8 @@ const QASection: React.FC = () => {
 
   return (
     <section className="relative bg-light text-white py-24">
-      <div className="flex flex-col sm:flex-row max-w-7xl mx-auto px-4 py-12 gap-16">
-        <div className="flex flex-col flex-1 text-6xl font-extrabold mb-4">
+      <div className="flex flex-col sm:flex-row max-w-7xl mx-auto px-4 py-12 gap-2 sm:gap-16">
+        <div className="flex flex-col flex-1 text-4xl sm:text-6xl font-extrabold">
           <h2 className="text-black">{t("qa.title")}</h2>
           <h1 className="text-crimson">{t("qa.subtitle")}</h1>
         </div>
