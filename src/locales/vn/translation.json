@@ -11,62 +11,62 @@
     },
     "product": {
         "week": "Tuần này có gì hot? Từ 29/7 - 3/8 nè!",
-        "title": "PHÁ ĐẢO VỊ GIÁC VỚI 'FLAVOR QUỐC DÂN'!",
+        "title": "PHÁ ĐẢO VỊ GIÁC VỚI FLAVOR QUỐC DÂN!",
         "1": {
             "name": "Double Chocolate Chip Cookie",
             "desc": "Một chiếc cookie mềm tan, bùng nổ vị socola sữa ngọt ngào, thêm chút đắng nhẹ từ socola đen và hít hà vị muối biển đánh thức mọi giác quan. Đỉnh của chóp!"
         },
         "2": {
             "name": "Matcha Cheesecake",
-            "desc": "Phô mai tan chảy mix với matcha xanh mướt, thơm lừng quyện cùng vị béo ngậy siêu cuốn. Ăn miếng nào 'chill' miếng đó!"
+            "desc": "Phô mai tan chảy mix với matcha xanh mướt, thơm lừng quyện cùng vị béo ngậy siêu cuốn. Ăn miếng nào chill miếng đó!"
         },
         "3": {
             "name": "Cinnamon Cookie",
-            "desc": "Cookie quế thơm lừng, ấm áp, vị ngọt nhẹ nhàng quyện cùng chút cay nồng đánh thức vị giác. Vừa cắn vừa 'nhâm nhi' hương thơm là mê liền!"
+            "desc": "Cookie quế thơm lừng, ấm áp, vị ngọt nhẹ nhàng quyện cùng chút cay nồng đánh thức vị giác. Vừa cắn vừa nhâm nhi hương thơm là mê liền!"
         },
-        "learnMore": "ĐÀO SÂU THÊM!",
+        "learnMore": "MUA NGAY!",
         "orderNow": "CHỐT ĐƠN LIỀN TAY!"
     },
     "qa": {
         "title": "HỎI NHẸ NHẸ,",
-        "subtitle": "LOWKIE 'BẬT MÍ' HẾT!",
+        "subtitle": "LOWKIE BẬT MÍ HẾT!",
         "q1": {
-            "question": "SAO LOWKIE LẠI 'KHÁC BỌT' VẬY TA?",
-            "answer": "Đơn giản là vì LOWKIE không chỉ ngon 'nuốt lưỡi' mà còn healthy 'hết nước chấm'! Bánh mềm mại, ngọt ngào mà không hề gây cảm giác 'tội lỗi' đâu nha. Mỗi em chứa tận 12g protein và dưới 300kcal—ngon lành cành đào cho bữa phụ hay sau khi tập gym 'xỉu up xỉu down' đó!"
+            "question": "SAO LOWKIE LẠI KHÁC BỌT VẬY TA?",
+            "answer": "Đơn giản là vì LOWKIE không chỉ ngon nuốt lưỡi mà còn healthy hết nước chấm! Bánh mềm mại, ngọt ngào mà không hề gây cảm giác tội lỗi đâu nha. Mỗi em chứa tận 12g protein và dưới 300kcal—ngon lành cành đào cho bữa phụ hay sau khi tập gym xỉu up xỉu down đó!"
         },
         "q2": {
-            "question": "LOWKIE CÓ 'NGỌT LỊM TIM' KHÔNG? ĐƯỜNG NHIỀU HÔNG TA?",
-            "answer": "Yên tâm nha! Mỗi chiếc LOWKIE chỉ có 12g đường tự nhiên thôi, ngọt thanh vừa đủ để 'chiều lòng' vị giác mà vẫn đảm bảo dinh dưỡng cân bằng. Nói không với chất bảo quản hay đường hóa học nha!"
+            "question": "LOWKIE CÓ NGỌT LỊM TIM KHÔNG? ĐƯỜNG NHIỀU HÔNG TA?",
+            "answer": "Yên tâm nha! Mỗi chiếc LOWKIE chỉ có 12g đường tự nhiên thôi, ngọt thanh vừa đủ để chiều lòng vị giác mà vẫn đảm bảo dinh dưỡng cân bằng. Nói không với chất bảo quản hay đường hóa học nha!"
         },
         "q3": {
-            "question": "MẤY 'NHÓC TÌ' Ở NHÀ CÓ 'ĐÁNH CHÉN' LOWKIE ĐƯỢC KHÔNG?",
-            "answer": "Được 'tuốt luốt' nha! LOWKIE 'cưng chiều' cả các bé luôn đó. Toàn bộ nguyên liệu đều 'sạch bong kin kít', không chất bảo quản, phẩm màu hay 'phụ gia linh tinh' đâu!"
+            "question": "MẤY NHÓC TÌ Ở NHÀ CÓ ĐÁNH CHÉN LOWKIE ĐƯỢC KHÔNG?",
+            "answer": "Được tuốt luốt nha! LOWKIE cưng chiều cả các bé luôn đó. Toàn bộ nguyên liệu đều sạch bong kin kít, không chất bảo quản, phẩm màu hay phụ gia linh tinh đâu!"
         },
         "q4": {
-            "question": "NGÀY NÀO CŨNG 'MĂM MĂM' LOWKIE CÓ 'ỔN ÁP' KHÔNG TA?",
-            "answer": "Quá 'ổn áp' luôn chứ! Với dinh dưỡng 'cân kèo', nguyên liệu 'xịn sò' và hương vị 'gây nghiện', LOWKIE là chân ái để bạn 'nhâm nhi' mỗi ngày mà không lo 'phá dáng' đâu nhé!"
+            "question": "NGÀY NÀO CŨNG MĂM MĂM LOWKIE CÓ ỔN ÁP KHÔNG TA?",
+            "answer": "Quá ổn áp luôn chứ! Với dinh dưỡng cân kèo, nguyên liệu xịn sò và hương vị gây nghiện, LOWKIE là chân ái để bạn nhâm nhi mỗi ngày mà không lo phá dáng đâu nhé!"
         },
         "q5": {
-            "question": "LOWKIE 'GIỮ TƯƠI' ĐƯỢC BAO LÂU NÈ?",
-            "answer": "Bạn có thể để bánh ở ngoài tầm 4 ngày nè. Muốn 'bảo toàn' độ tươi lâu hơn thì cho vào tủ lạnh tối đa 2 tuần hoặc 'đóng băng' trong 1 tháng nha. Lúc ăn thì 'hâm nóng' nhẹ tí là 'ngon bá cháy' luôn!"
+            "question": "LOWKIE GIỮ TƯƠI ĐƯỢC BAO LÂU NÈ?",
+            "answer": "Bạn có thể để bánh ở ngoài tầm 4 ngày nè. Muốn bảo toàn độ tươi lâu hơn thì cho vào tủ lạnh tối đa 2 tuần hoặc đóng băng trong 1 tháng nha. Lúc ăn thì hâm nóng nhẹ tí là ngon bá cháy luôn!"
         },
         "q6": {
-            "question": "LOWKIE CÓ BAO NHIÊU 'FLAVOR' ĐỂ 'KHÁM PHÁ' VẬY?",
-            "answer": "LOWKIE 'chiêu đãi' bạn đủ loại hương vị 'hút hồn' luôn đó! Nào là chocolate chip, double chocolate, và bơ đậu phộng... Tất cả đều 'made by' nguyên liệu tự nhiên 'chất lừ' mà vẫn 'đỉnh cao' vị ngon!"
+            "question": "LOWKIE CÓ BAO NHIÊU FLAVOR ĐỂ KHÁM PHÁ VẬY?",
+            "answer": "LOWKIE chiêu đãi bạn đủ loại hương vị hút hồn luôn đó! Nào là chocolate chip, double chocolate, và bơ đậu phộng... Tất cả đều made by nguyên liệu tự nhiên chất lừ mà vẫn đỉnh cao vị ngon!"
         }
     },
     "selling": {
         "<200cals": "Nhẹ tênh dưới 200 calo!",
         "16g": "Bơm tận 16g protein siêu chất!",
-        "lowSugar": "Ít đường, ngọt 'sương sương'!",
-        "noColor": "Không phẩm màu 'nhức mắt'!",
-        "avocado": "Dầu bơ 'thần thánh'!",
-        "title": "NGUYÊN LIỆU 'XỊN ĐÉT'. LỢI ÍCH 'SIÊU TO KHỔNG LỒ'.",
-        "desc": "Tụi mình 'lên công thức' mấy em bánh này không chỉ để bạn 'ăn sướng cái miệng' đâu—mà còn 'mix' toàn nguyên liệu 'đỉnh cao', 'thông minh' để bạn 'ăn vặt' mà vẫn 'tự tin khoe cá tính' đó!"
+        "lowSugar": "Ít đường, ngọt sương sương!",
+        "noColor": "Không phẩm màu nhức mắt!",
+        "avocado": "Dầu bơ thần thánh!",
+        "title": "NGUYÊN LIỆU XỊN ĐÉT. LỢI ÍCH SIÊU TO KHỔNG LỒ.",
+        "desc": "Tụi mình lên công thức mấy em bánh này không chỉ để bạn ăn sướng cái miệng đâu—mà còn mix toàn nguyên liệu đỉnh cao, thông minh để bạn ăn vặt mà vẫn tự tin khoe cá tính đó!"
     },
     "review": {
-        "title": "DÂN TÌNH 'RẦN RẦN'. REVIEW 'SIÊU CHÂN THẬT'. NGON 'BẤT CHẤP'!",
-        "desc": "Đừng chỉ 'nghe lời' tụi mình—'lướt lướt' xem tại sao hàng ngàn 'team ăn vặt' đã 'say bye' mấy thanh protein khô khan và 'chạy' sang 'đội' Lowkie nha!"
+        "title": "DÂN TÌNH RẦN RẦN. REVIEW SIÊU CHÂN THẬT. NGON BẤT CHẤP!",
+        "desc": "Đừng chỉ nghe lời tụi mình—lướt lướt xem tại sao hàng ngàn team ăn vặt đã say bye mấy thanh protein khô khan và chạy sang đội Lowkie nha!"
     },
     "footer": {
         "rights": "đã đăng ký bản quyền.",
