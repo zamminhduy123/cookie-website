@@ -32,7 +32,7 @@ export default function NationalFlavors() {
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   return (
-    <div className="py-12 px-4 sm:px-8">
+    <div className="py-12 px-4 sm:px-8 max-w-7xl mx-auto">
       {/* Header */}
       <div className="sm:mb-0 mb-12">
         <span className="inline-block px-4 py-1 text-sm font-medium bg-pink-200 text-pink-800 rounded-full mb-2">

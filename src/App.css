@@ -159,3 +159,58 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* Hide the default slick dots */
+.slick-dots li button:before {
+  content: '' !important;
+}
+.slick-dots li {
+  margin: 0;
+  width: fit-content !important
+}
+
+/* Custom dots container */
+.custom-dots-container {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  gap: 16px
+}
+/* The wrapper for our custom dot, which will be the visible element */
+.custom-dot-wrapper {
+  background-color: var(--strawberry); /* Inactive color */
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style for the INACTIVE dots (circles) */
+.custom-dot-wrapper:not(.active) {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Style for the ACTIVE dot (pill shape) */
+.custom-dot-wrapper.active {
+  width: 30px;
+  height: 10px;
+  border-radius: 5px; /* Pill shape */
+  background-color: var(--strawberry); /* Background of the progress bar */
+}
+
+/* The actual filling progress bar */
+.progress-fill {
+  height: 100%;
+  background-color: var(--crimson); /* Fill color */
+  border-radius: 5px;
+  /* Width is set by inline style in React */
+  transition: width 0.1s linear; /* Smooths out the animation */
+}

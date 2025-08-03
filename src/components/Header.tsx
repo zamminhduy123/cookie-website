@@ -34,7 +34,7 @@ const Header: React.FC = () => {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl h-[100px] items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <a
           href="/"
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
           aria-label="Lowkie homepage"
         >
           {/* <img src={Logo} alt="Lowkie logo" className="w-12" /> */}
-          <span className="text-2xl font-black text-crimson apple-peach">LOWKIE</span>
+          <span className="text-2xl lg:text-3xl font-black text-crimson apple-peach">LOWKIE</span>
         </a>
 
         {/* Nav links */}
