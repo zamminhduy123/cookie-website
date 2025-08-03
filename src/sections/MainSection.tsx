@@ -11,16 +11,16 @@ export default function BrownieCarousel() {
 
   const slides = [
     {
-      img: "/main/cb2.png",
+      img: "/main/cb2.webp",
       title: t("main.title"),
       desc: t("main.desc"),
       cta: t("main.cta"),
     },
     {
-      img: "/main/cb1.png",
+      img: "/main/cb1.webp",
     },
     {
-      img: "/main/cb3.png",
+      img: "/main/cb3.webp",
     },
   ];
 

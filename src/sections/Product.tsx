@@ -8,7 +8,7 @@ const items = [
     name: "Double Chocolate Chip Cookie",
     desc:
       "A gooey cookie packed with milk chocolate chips, topped with semi-sweet chocolate chunks, and finished with a dash of sea salt.",
-    image: "/flavors/choco-1.png",
+    image: "/flavors/choco-1.webp",
     bgColor: "#633625",
   },
   {
@@ -16,7 +16,7 @@ const items = [
     name: "Matcha Cheesecake",
     desc:
     "A gooey cookie packed with milk chocolate chips, topped with semi-sweet chocolate chunks, and finished with a dash of sea salt.",
-    image: "/flavors/matcha-1.png",
+    image: "/flavors/matcha-1.webp",
     bgColor: "#78793E",
   },
   {
@@ -24,7 +24,7 @@ const items = [
     name: "Cinammon Cookie",
     desc:
     "A gooey cookie packed with milk chocolate chips, topped with semi-sweet chocolate chunks, and finished with a dash of sea salt.",
-    image: "/flavors/cinnamon-1.png",
+    image: "/flavors/cinnamon-1.webp",
     bgColor: "#F6A661",
   },
 ];

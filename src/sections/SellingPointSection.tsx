@@ -92,7 +92,7 @@ export default function SellingPointsSection() {
               viewport={{ once: true }}
             >
               <img
-                src="/poster.png"
+                src="/poster.webp"
                 alt="Product pouring"
                 className="rounded-2xl w-full max-w-sm shadow-lg"
               />
@@ -104,7 +104,7 @@ export default function SellingPointsSection() {
               viewport={{ once: true }}
             >
               <img
-                src="/poster2.png"
+                src="/poster2.webp"
                 alt="Product pouring 2"
                 className="rounded-2xl w-full max-w-sm shadow-lg -ml-8 z-0"
               />
