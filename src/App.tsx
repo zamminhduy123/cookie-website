@@ -8,6 +8,7 @@ import QASection from "./sections/Q&ASection";
 import ReviewSection from "./sections/ReviewSection";
 import SellingPointsSection from "./sections/SellingPointSection";
 import SmoothScrollLayout from "./components/SmoothScrollLayout.tsx";
+import DidYouKnow from "./sections/DidYouKnow.tsx";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <main className="min-h-screen w-full relative bg-light">
           <MainSection />
           <Product />
-          <QASection />
+          <DidYouKnow/>
           <SellingPointsSection />
+          <QASection />
           <ReviewSection />
         </main>
         <Footer />

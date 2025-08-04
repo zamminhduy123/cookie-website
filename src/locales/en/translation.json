@@ -71,5 +71,11 @@
     "footer": {
         "rights": "all rights reserved.",
         "cta": "Order Now"
+    },
+    "did": {
+        "title": "Did You Know?",
+        "sugar": "Regular cookies can contain over 40 g of refined sugar in a single serving.",
+        "low_protein": "Regular cookies typically contain only about 1–2 grams of protein—too low to support proper nutrition.",
+        "preservatives": "Store-bought cookies frequently include preservatives and artificial flavourings."
     }
 }

@@ -71,5 +71,11 @@
     "footer": {
         "rights": "đã đăng ký bản quyền.",
         "cta": "Đặt hàng ngay"
+    },
+    "did": {
+        "title": "Bạn Có Biết?",
+        "sugar": "Bánh quy thông thường có thể chứa hơn 40 g đường tinh luyện chỉ trong một khẩu phần.",
+        "low_protein": "Bánh quy thông thường thường chỉ chứa khoảng 1–2 g protein—quá thấp để hỗ trợ dinh dưỡng hợp lý.",
+        "preservatives": "Bánh quy đóng gói thường có chất bảo quản và hương liệu nhân tạo."
     }
 }
