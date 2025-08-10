@@ -24,8 +24,8 @@
             "name": "Cinnamon Cookie",
             "desc": "Cookie quế thơm lừng, ấm áp, vị ngọt nhẹ nhàng quyện cùng chút cay nồng đánh thức vị giác. Vừa cắn vừa nhâm nhi hương thơm là mê liền!"
         },
-        "learnMore": "MUA NGAY!",
-        "orderNow": "CHỐT ĐƠN LIỀN TAY!"
+        "learnMore": "Check macro!",
+        "orderNow": "MUA NGAY!"
     },
     "qa": {
         "title": "HỎI NHẸ NHẸ,",
@@ -77,5 +77,38 @@
         "sugar": "Bánh quy thông thường có thể chứa hơn 40 g đường tinh luyện chỉ trong một khẩu phần.",
         "low_protein": "Bánh quy thông thường thường chỉ chứa khoảng 1–2 g protein—quá thấp để hỗ trợ dinh dưỡng hợp lý.",
         "preservatives": "Bánh quy đóng gói thường có chất bảo quản và hương liệu nhân tạo."
+    },
+    "productPage": {
+        "servedWarm": "Nướng mỗi ngày, tươi rói hết nấc",
+        "orderNow": "Chốt đơn liền tay",
+        "addToCart": "Add vào giỏ, quẩy thôi",
+        "inStock": "Còn nè, triển liền",
+        "outOfStock": "Hết sạch, buồn thúi ruột",
+        "reviews": "Review có tâm",
+        "nutriInfo": "Info bổ dưỡng nghen",
+        "nutriDisclaimer": "Info chung 2k calo/ngày nha, bồ muốn nhiêu thì tùy nha.",
+        "contain": "Có",
+        "allergen": "Dị ứng đây",
+        "nutrient": "Chất bổ nè",
+        "amount": "Số lượng",
+        "mayContain": "Có khả năng dính",
+        "allergenDisclaimer": "Dị ứng nặng thì ib liền trước khi order nha. Bếp mình làm chung với hạt, sữa, đậu nành, gluten, ai nhạy cảm thì để ý nha.",
+        "nutritionFacts": "Bảng thông tin dinh dưỡng chi tiết"
+    },
+    "chocolate-chip": {
+        "name": "Chocolate Chip Cookie",
+        "desc": "Bánh quy xịn xò, auto chuẩn bài. Dày cộm, mềm xỉu, bao la chip sô cô la sữa. Thêm xíu muối biển cho tỉnh ngủ, đỉnh của chóp."
+    },
+    "matcha-cheesecake": {
+        "name": "Matcha Cheesecake",
+        "desc": "Cheesecake tan chảy x matcha xanh mướt, thơm lừng, béo ngậy cực cuốn. Ăn miếng nào là chill miếng đó, đúng gu luôn!"
+    },
+    "cinnamon-cookie": {
+        "name": "Cinamon Cookie",
+        "desc": "Cookie quế thơm nức mũi, ấm áp dễ chịu. Ngọt thanh thanh, thêm xíu cay cay cho tỉnh. Vừa cắn vừa nhâm nhi là auto mê liền!"
+    },
+    "double-choco-cookie": {
+        "name": "Double Chocolate Chip Cookie",
+        "desc": "Cốt bánh socola keo lỳ, quyện cùng hỗn hợp topping socola sữa và socola đắng hết nước chấm. Mấy bạn hệ socola nhìn là chỉ có 'u là trời' thôi!"
     }
 }

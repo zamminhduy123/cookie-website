@@ -1,0 +1,79 @@
+
+export const COOKIE_DB = {
+    'chocolate-chip': {
+        id: 'chocolate-chip',
+        price: 35000,
+        image: '/flavors/choco-1.avif',
+        ingredients: ['Flour', 'Sugar', 'Butter', 'Chocolate Chips', 'Eggs', 'Vanilla Extract'],
+        nutrition: [
+            { "label": "Calories",       "amount": "308 cal" },
+            { "label": "Protein",        "amount": "13 g" },
+            { "label": "Fat",            "amount": "16 g" },
+            { "label": "Saturated Fat",  "amount": "9 g" },
+            { "label": "Trans Fat",      "amount": "0 g" },
+            { "label": "Cholesterol",    "amount": "58 mg" },
+            { "label": "Sodium",         "amount": "222 mg" },
+            { "label": "Carbohydrates",  "amount": "33 g" },
+            { "label": "Dietary Fiber",  "amount": "2 g" },
+            { "label": "Sugars",         "amount": "13 g" },
+        ],
+        color: '#E2A657', // warm cookie-brown
+    },
+    "matcha-cheesecake": {
+        id: 'matcha-cheesecake',
+        price: 40000,
+        image: '/flavors/matcha-1.webp',
+        ingredients: ['Flour', 'Sugar', 'Butter', 'Matcha Powder', 'Cream Cheese', 'Eggs', 'Vanilla Extract'],
+        nutrition: [
+            { "label": "Calories",       "amount": "308 cal" },
+            { "label": "Protein",        "amount": "13 g" },
+            { "label": "Fat",            "amount": "16 g" },
+            { "label": "Saturated Fat",  "amount": "9 g" },
+            { "label": "Trans Fat",      "amount": "0 g" },
+            { "label": "Cholesterol",    "amount": "58 mg" },
+            { "label": "Sodium",         "amount": "222 mg" },
+            { "label": "Carbohydrates",  "amount": "33 g" },
+            { "label": "Dietary Fiber",  "amount": "2 g" },
+            { "label": "Sugars",         "amount": "13 g" },
+        ],
+        color: '#78793E', // soft matcha green
+    },
+    // "cinnamon-cookie": {
+    //     id: 'cinnamon-cookie',
+    //     price: 35000,
+    //     image: '/flavors/cinnamon-1.webp',
+    //     ingredients: ['Flour', 'Sugar', 'Butter', 'Cinnamon', 'Eggs', 'Vanilla Extract'],
+    //     nutrition: [
+    //         { "label": "Calories",       "amount": "308 cal" },
+    //         { "label": "Protein",        "amount": "13 g" },
+    //         { "label": "Fat",            "amount": "16 g" },
+    //         { "label": "Saturated Fat",  "amount": "9 g" },
+    //         { "label": "Trans Fat",      "amount": "0 g" },
+    //         { "label": "Cholesterol",    "amount": "58 mg" },
+    //         { "label": "Sodium",         "amount": "222 mg" },
+    //         { "label": "Carbohydrates",  "amount": "33 g" },
+    //         { "label": "Dietary Fiber",  "amount": "2 g" },
+    //         { "label": "Sugars",         "amount": "13 g" },
+    //     ],
+    //     color: '#BA8650', // warm cinnamon brown
+    // },
+    "double-choco-cookie": {
+        id: 'double-choco-cookie',
+        price: 45000,
+        image: '/flavors/double-choco-1.webp',
+        ingredients: ['Flour', 'Sugar', 'Butter', 'Cinnamon', 'Eggs', 'Vanilla Extract'],
+        nutrition: [
+            { "label": "Calories",       "amount": "308 cal" },
+            { "label": "Protein",        "amount": "13 g" },
+            { "label": "Fat",            "amount": "16 g" },
+            { "label": "Saturated Fat",  "amount": "9 g" },
+            { "label": "Trans Fat",      "amount": "0 g" },
+            { "label": "Cholesterol",    "amount": "58 mg" },
+            { "label": "Sodium",         "amount": "222 mg" },
+            { "label": "Carbohydrates",  "amount": "33 g" },
+            { "label": "Dietary Fiber",  "amount": "2 g" },
+            { "label": "Sugars",         "amount": "13 g" },
+        ],
+        color: '#352620', // warm cinnamon brown
+    },
+}

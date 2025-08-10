@@ -91,6 +91,12 @@
 .apple-peach {
   font-family: 'Apple Peach', sans-serif;
 }
+.sugar-peach {
+  font-family: 'Sugar Peach', sans-serif;
+}
+.groovy {
+  font-family: 'Abstract Groovy', sans-serif;
+}
 
 canvas {
   position: fixed;
@@ -229,4 +235,8 @@ body {
   border-radius: 5px;
   /* Width is set by inline style in React */
   transition: width 0.1s linear; /* Smooths out the animation */
+}
+
+button {
+  cursor: pointer;
 }

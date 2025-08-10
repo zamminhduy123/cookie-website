@@ -24,8 +24,8 @@
             "name": "Cinammon Cookie",
             "desc": "A gooey cookie packed with milk chocolate chips, topped with semi-sweet chocolate chunks, and finished with a dash of sea salt."
         },
-        "learnMore": "Learn More",
-        "orderNow": "Order Now"
+        "learnMore": "Check macro!",
+        "orderNow": "Order Now!"
     },
     "qa": {
         "title": "YOU ASK,",
@@ -77,5 +77,39 @@
         "sugar": "Regular cookies can contain over 40 g of refined sugar in a single serving.",
         "low_protein": "Regular cookies typically contain only about 1–2 grams of protein—too low to support proper nutrition.",
         "preservatives": "Store-bought cookies frequently include preservatives and artificial flavourings."
-    }
+    },
+
+    "productPage": {
+          "servedWarm": "Freshly baked every day",
+          "orderNow": "Order now",
+          "addToCart": "Add to cart",
+          "inStock": "In stock",
+          "outOfStock": "Out of stock",
+          "reviews": "Reviews",
+          "nutriInfo": "Nutrition Information",
+          "nutriDisclaimer": "2,000 calories a day is used for general nutrition advice; your mileage may vary.",
+          "contain": "Contains",
+          "allergen": "Allergens",
+          "nutrient": "Nutrient",
+          "amount": "Amount",
+          "mayContain": "May contain",
+          "allergenDisclaimer": "If you have a severe allergy, please contact us before ordering. We bake in a kitchen that handles nuts, dairy, soy, and gluten. (We love you and want you safe!)",
+          "nutritionFacts": "Nutrition Facts"
+        },
+        "chocolate-chip": {
+            "name": "Chocolate Chip Cookie",
+            "desc": "The classic—you can’t go wrong. Thick, soft, and loaded with milk chocolate chips, finished with a cheeky pinch of sea salt to wake up your taste buds."
+          },
+          "matcha-cheesecake": {
+            "name": "Matcha Cheesecake",
+            "desc": "Melty cheesecake swirled with lush green matcha—aromatic, rich, and dangerously smooth. One bite and your brain hits chill mode."
+          },
+          "cinnamon-cookie": {
+            "name": "Cinnamon Cookie",
+            "desc": "Warm, cozy cinnamon vibes with a gentle sweetness and a playful spicy wink. Take a bite and watch your nose do the happy dance."
+          },
+          "ddouble-choco-cookie": {
+            "name": "Double Chocolate Cookie",
+            "desc": "A rich, decadent chocolate cookie base packed with a generous mix of milk chocolate and dark chocolate chips for the ultimate chocolate lover's delight."
+        }
 }

@@ -4,7 +4,7 @@ export default function LangSwitch () {
   const { i18n } = useTranslation();
   const currentLang = i18n.language;
 
-  console.log("Current language:", currentLang);
+  // console.log("Current language:", currentLang);
 
   return (
     <div className="flex gap-2">

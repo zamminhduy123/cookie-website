@@ -7,7 +7,7 @@ import {
   // FaXTwitter
 } from "react-icons/fa6"; // make sure you have react‑icons v4+
 import LangSwitch from "./LangSwitch"; // Adjust the import path as necessary
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -33,6 +33,18 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isHighlightPath = (to: string) => {
+    const { pathname, hash } = location;
+    // Hash link to section on home (e.g., "/#products")
+    if (to.startsWith("/#")) {
+      return pathname === "/" && hash === to.slice(1); // location.hash includes '#'
+    }
+    // Root link
+    if (to === "/") return pathname === "/" && (hash === "" || hash === undefined);
+    // Other paths
+    return pathname.startsWith(to);
+  };
+
   const content = (
     <div
       className={`w-full bg-strawberry transition-transform duration-300 ${
@@ -53,21 +65,21 @@ const Header: React.FC = () => {
         {/* Nav links */}
         <nav className="hidden space-x-10 md:flex">
           {[
-            { href: "/", label: t("header.home") },
-            { href: "/products", label: t("header.products") },
-            { href: "/about", label: t("header.about") }
-          ].map(({ href, label }) => (
-            <a
-              key={href}
-              href={href}
+            { to: "/", label: t("header.home") },
+            // { to: "/#products", label: t("header.products") },
+            { to: "/about", label: t("header.about") }
+          ].map(({ to, label }) => (
+            <Link
+              key={to}
+              to={to}
               className={`font-semibold transition-all duration-300 ${
-                location.pathname === href
+                isHighlightPath(to)
                   ? "text-white underline underline-offset-4 scale-105"
                   : "text-crimson hover:text-white hover:underline hover:underline-offset-4 hover:scale-105"
               }`}
             >
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
 
