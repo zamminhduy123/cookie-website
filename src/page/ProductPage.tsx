@@ -26,9 +26,9 @@ const ProductPage: React.FC = () => {
   const product = getProduct(productId);
 
   const { t } = useTranslation();
-  const [qty, setQty] = useState(1);
-  const increase = () => setQty((q) => Math.min(99, q + 1));
-  const decrease = () => setQty((q) => Math.max(1, q - 1));
+  // const [qty, setQty] = useState(1);
+  // const increase = () => setQty((q) => Math.min(99, q + 1));
+  // const decrease = () => setQty((q) => Math.max(1, q - 1));
 
   const priceFmt = formatPrice(product.price || 0);
 

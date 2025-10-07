@@ -7,7 +7,7 @@ import {
   // FaXTwitter
 } from "react-icons/fa6"; // make sure you have react‑icons v4+
 import LangSwitch from "./LangSwitch"; // Adjust the import path as necessary
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
