@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
