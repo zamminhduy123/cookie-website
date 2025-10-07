@@ -34,6 +34,7 @@ export default function SellingPointsSection() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
+      id="benefits" 
     >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 ">
         {/* Text Content */}

@@ -24,7 +24,7 @@ const FLAVORS: Flavor[] = [
     id: "chocochip",
     name: "CHOCOCHIP",
     color: "#6B3A20",
-    imgDefault: "/flavors/choco-1.png",
+    imgDefault: "/flavors/choco-chip.webp",
     imgHover: "/flavors/choco-2.png",
   },
   {

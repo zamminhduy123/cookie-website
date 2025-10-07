@@ -2,7 +2,7 @@
 @layer theme {
   :root {
     --crimson: #9A0002;
-    --strawberry: #FEB3B0;
+    --strawberry: #FFDFE4;
     --choco: #4B1E1E;
     --vanilla: #FFF5F0;
     --honey: #FBC252;
@@ -13,6 +13,15 @@
 @font-face {
   font-family: 'Abstract Groovy';
   src: url('/font/aAbstractGroovy.ttf');
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/font/Fraunces.ttf');
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,7 +46,7 @@
   position: relative;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fraunces', sans-serif;
 }
 @keyframes marquee-left {
   0% {
@@ -83,7 +92,7 @@
 .bg-crimson { background-color: var(--crimson) !important; }
 .text-crimson { color: var(--crimson) !important; }
 .bg-strawberry { background-color: var(--strawberry) !important; }
-.bg-light { background-color: #FFE7E6 !important; }
+.bg-light { background-color: #FFDFE4 !important; }
 .text-strawberry { color: var(--strawberry) !important; }
 .border-crimson { border-color: var(--crimson) !important; }
 .border-strawberry { border-color: var(--strawberry) !important; }
@@ -96,6 +105,9 @@
 }
 .groovy {
   font-family: 'Abstract Groovy', sans-serif;
+}
+.fraunces { 
+  font-family: 'Fraunces', sans-serif;
 }
 
 canvas {
@@ -153,6 +165,7 @@ canvas {
   margin: 0 auto;
 }
 
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -179,7 +192,8 @@ canvas {
 /* ----- Global font ----- */
 html,
 body {
-  font-family: 'Montserrat', sans-serif;
+  /* @apply fraunces; */
+  font-family: 'Fraunces', sans-serif;
 }
 
 /* Hide the default slick dots */
@@ -207,7 +221,7 @@ body {
 }
 /* The wrapper for our custom dot, which will be the visible element */
 .custom-dot-wrapper {
-  background-color: var(--strawberry); /* Inactive color */
+  background-color: white; /* Inactive color */
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -225,7 +239,7 @@ body {
   width: 30px;
   height: 10px;
   border-radius: 5px; /* Pill shape */
-  background-color: var(--strawberry); /* Background of the progress bar */
+  background-color: white; /* Background of the progress bar */
 }
 
 /* The actual filling progress bar */

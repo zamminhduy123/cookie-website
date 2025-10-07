@@ -2,8 +2,8 @@
 export const COOKIE_DB = {
     'chocolate-chip': {
         id: 'chocolate-chip',
-        price: 35000,
-        image: '/flavors/choco-1.avif',
+        price: 45000,
+        image: '/flavors/choco-chip.webp',
         ingredients: ['Flour', 'Sugar', 'Butter', 'Chocolate Chips', 'Eggs', 'Vanilla Extract'],
         nutrition: [
             { "label": "Calories",       "amount": "308 cal" },
@@ -18,10 +18,11 @@ export const COOKIE_DB = {
             { "label": "Sugars",         "amount": "13 g" },
         ],
         color: '#E2A657', // warm cookie-brown
+        inStock: true,
     },
     "matcha-cheesecake": {
         id: 'matcha-cheesecake',
-        price: 40000,
+        price: 55000,
         image: '/flavors/matcha-1.webp',
         ingredients: ['Flour', 'Sugar', 'Butter', 'Matcha Powder', 'Cream Cheese', 'Eggs', 'Vanilla Extract'],
         nutrition: [
@@ -37,6 +38,7 @@ export const COOKIE_DB = {
             { "label": "Sugars",         "amount": "13 g" },
         ],
         color: '#78793E', // soft matcha green
+        inStock: false,
     },
     // "cinnamon-cookie": {
     //     id: 'cinnamon-cookie',
@@ -59,7 +61,7 @@ export const COOKIE_DB = {
     // },
     "double-choco-cookie": {
         id: 'double-choco-cookie',
-        price: 45000,
+        price: 50000,
         image: '/flavors/double-choco-1.webp',
         ingredients: ['Flour', 'Sugar', 'Butter', 'Cinnamon', 'Eggs', 'Vanilla Extract'],
         nutrition: [
@@ -75,5 +77,6 @@ export const COOKIE_DB = {
             { "label": "Sugars",         "amount": "13 g" },
         ],
         color: '#352620', // warm cinnamon brown
+        inStock: false,
     },
 }

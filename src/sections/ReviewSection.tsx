@@ -1,91 +1,34 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+// Mapped authors in the order shown in your image.
+// There are 16 names, so the 17th review loops back to the first name.
+
 const reviews = [
-  {
-    id: 1,
-    content: "“These cookies are insanely good. I swapped out my bars!”",
-    author: "— Taylor R.",
-  },
-  {
-    id: 2,
-    content: "“Real texture, real flavor. The hype is real.”",
-    author: "— Jamal K.",
-  },
-  {
-    id: 3,
-    content: "“I’ve tried them all. Chunky is the only one I repurchase.”",
-    author: "— Anika S.",
-  },
-  {
-    id: 4,
-    content: "“Soft, satisfying, and nothing like a dry protein bar.”",
-    author: "— Mark D.",
-  },{
-    id: 1,
-    content: "“These cookies are insanely good. I swapped out my bars!”",
-    author: "— Taylor R.",
-  },
-  {
-    id: 2,
-    content: "“Real texture, real flavor. The hype is real.”",
-    author: "— Jamal K.",
-  },
-  {
-    id: 3,
-    content: "“I’ve tried them all. Chunky is the only one I repurchase.”",
-    author: "— Anika S.",
-  },
-  {
-    id: 4,
-    content: "“Soft, satisfying, and nothing like a dry protein bar.”",
-    author: "— Mark D.",
-  },{
-    id: 1,
-    content: "“These cookies are insanely good. I swapped out my bars!”",
-    author: "— Taylor R.",
-  },
-  {
-    id: 2,
-    content: "“Real texture, real flavor. The hype is real.”",
-    author: "— Jamal K.",
-  },
-  {
-    id: 3,
-    content: "“I’ve tried them all. Chunky is the only one I repurchase.”",
-    author: "— Anika S.",
-  },
-  {
-    id: 4,
-    content: "“Soft, satisfying, and nothing like a dry protein bar.”",
-    author: "— Mark D.",
-  },{
-    id: 1,
-    content: "“These cookies are insanely good. I swapped out my bars!”",
-    author: "— Taylor R.",
-  },
-  {
-    id: 2,
-    content: "“Real texture, real flavor. The hype is real.”",
-    author: "— Jamal K.",
-  },
-  {
-    id: 3,
-    content: "“I’ve tried them all. Chunky is the only one I repurchase.”",
-    author: "— Anika S.",
-  },
-  {
-    id: 4,
-    content: "“Soft, satisfying, and nothing like a dry protein bar.”",
-    author: "— Mark D.",
-  },
+  { id: 1,  content: "“Bánh ngon thơm mềm nhưng cần nhỏ lại, mỏng hơn cho đỡ ngán.”", author: "— Minh Tùng" },
+  { id: 2,  content: "“Bánh ngon thơm mềm nhưng cần nhỏ lại, mỏng hơn cho đỡ ngán.”", author: "— Thảo Nguyên" },
+  { id: 3,  content: "“Ngon, ngọt đủ, thêm mùi bơ hơn, thích vụ có protein.”", author: "— Minh Duy" },
+  { id: 4,  content: "“Vị oke, thích ăn lạnh hơn.”", author: "— Trình" },
+  { id: 5,  content: "“Muốn mỏng hơn nữa, mềm ướt hơn, thấy ngọt, thích hạnh nhân hơn hạt điều.”", author: "— Kiệt" },
+  { id: 6,  content: "“Ngọt nhiều, thích thêm marshmallow hơn, ăn lạnh thấy được.”", author: "— Như Vy" },
+  { id: 7,  content: "“Thích ăn nóng giòn hơn, thấy ngọt.”", author: "— Tài" },
+  { id: 8,  content: "“Ngọt, thích ăn lạnh hơn.”", author: "— Thư" },
+  { id: 9,  content: "“Ngon, thơm.”", author: "— Trâm Anh" },
+  { id: 10, content: "“Ngon thơm, thích ăn cả 2 kiểu, ko thích hạt điều.”", author: "— Thơ" },
+  { id: 11, content: "“Thích nướng lại hơn, bánh ok ngọt đủ rồi.”", author: "— Thanh Ngân" },
+  { id: 12, content: "“Ngon, thích nướng lại hơn, thấy ngọt ok.”", author: "— Nghi" },
+  { id: 13, content: "“Vị oke, nhưng cần cải thiện phần texture.”", author: "— Long" },
+  { id: 14, content: "“Ngon thơm.”", author: "— em của Hà" },
+  { id: 15, content: "“Bánh cực kỳ ngon, nhưng vẫn có 1 chút mùi bột do bánh ít đường quá”", author: "— AChou" },
+  { id: 16, content: "“Good taste, good visual, kinda flour smell (this could be the smell of whey protein) but not important.”", author: "— WooCHin" },
+  { id: 17, content: "“- Bánh quá nhỏ; socola không đều; bị khô; hạt óc chó hơi dầu; để hơn 12 tiếng ăn vẫn ok.”", author: "— Minh Tùng" }
 ];
 
 export default function ReviewSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-white overflow-hidden min-h-[70vh]">
+    <section className="py-20 bg-white overflow-hidden min-h-[70vh]" id="reviews" >
       <motion.h2
         className="text-3xl sm:text-4xl font-extrabold text-center text-crimson mb-4"
         initial={{ opacity: 0, y: 30 }}

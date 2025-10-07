@@ -2,7 +2,11 @@
     "header": {
         "home": "Trang chủ",
         "products": "Bánh nè",
-        "about": "Về bọn tớ"
+        "about": "Về bọn tớ",
+        "flavors": "Các vị bánh",
+        "fun_fact": "Bạn có biết?",
+        "benefits": "Lợi ích",
+        "reviews": "Đánh giá"
     },
     "main": {
         "title": "LOWKIE",
@@ -25,7 +29,8 @@
             "desc": "Cookie quế thơm lừng, ấm áp, vị ngọt nhẹ nhàng quyện cùng chút cay nồng đánh thức vị giác. Vừa cắn vừa nhâm nhi hương thơm là mê liền!"
         },
         "learnMore": "Check macro!",
-        "orderNow": "MUA NGAY!"
+        "orderNow": "MUA NGAY!",
+        "soldOut": "Hiện chưa có hàng."
     },
     "qa": {
         "title": "HỎI NHẸ NHẸ,",
@@ -81,7 +86,7 @@
     "productPage": {
         "servedWarm": "Nướng mỗi ngày, tươi rói hết nấc",
         "orderNow": "Chốt đơn liền tay",
-        "addToCart": "Add vào giỏ, quẩy thôi",
+        "addToCart": "Liên hệ mua hàng!",
         "inStock": "Còn nè, triển liền",
         "outOfStock": "Hết sạch, buồn thúi ruột",
         "reviews": "Review có tâm",
@@ -96,8 +101,8 @@
         "nutritionFacts": "Bảng thông tin dinh dưỡng chi tiết"
     },
     "chocolate-chip": {
-        "name": "Chocolate Chip Cookie",
-        "desc": "Bánh quy xịn xò, auto chuẩn bài. Dày cộm, mềm xỉu, bao la chip sô cô la sữa. Thêm xíu muối biển cho tỉnh ngủ, đỉnh của chóp."
+        "name": "Walnut Chocolate Chip Cookie",
+        "desc": "Dày cộm, mềm xỉu, ngập chip sô-cô-la sữa và hạt óc chó bùi giòn. Rắc xíu muối biển cho tỉnh ngủ, ngọt dịu bằng mật ong. Mỗi chiếc ~16g protein, chỉ 6g đường — đỉnh của chóp!"
     },
     "matcha-cheesecake": {
         "name": "Matcha Cheesecake",

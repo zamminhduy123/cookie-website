@@ -81,14 +81,14 @@ export default function BrownieCarousel() {
   };
 
   return (
-    <div className="w-full relative flex flex-col items-center mb-24">
+    <div className="w-full relative flex flex-col items-center mb-24" id="main">
       <Slider {...settings} className="w-full max-w-7xl h-[70vh] px-4 sm:px-8">
         {slides.map((slide, index) => (
           <div key={index} className="relative slide-content px-2">
             <img
               src={slide.img}
               alt="cookie"
-              className="rounded-xl w-full h-[70vh] object-cover brightness-90 object-[center_35%]"
+              className="rounded-xl w-full h-[70vh] object-cover brightness-90 object-center"
             />
             {slide.title && (
               <motion.div

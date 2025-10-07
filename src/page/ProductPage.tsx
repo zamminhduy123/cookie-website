@@ -105,7 +105,7 @@ const ProductPage: React.FC = () => {
             {/* CTA row */}
             <div className="mt-6 flex w-full flex-col items-stretch gap-3 sm:flex-row sm:items-center">
               {/* quantity stepper */}
-              <div className="flex h-14 w-full select-none items-center justify-between rounded-full border-2 border-black/20 px-5 sm:w-[220px]">
+              {/* <div className="flex h-14 w-full select-none items-center justify-between rounded-full border-2 border-black/20 px-5 sm:w-[220px]">
                 <button
                   type="button"
                   aria-label="Decrease quantity"
@@ -123,11 +123,16 @@ const ProductPage: React.FC = () => {
                 >
                   +
                 </button>
-              </div>
+              </div> */}
 
               {/* add to cart */}
               <button className="inline-flex h-14 items-center justify-center rounded-full bg-black px-10 text-base font-semibold text-white shadow transition hover:opacity-90">
-                {t("productPage.addToCart", "Add To Cart")}
+               
+          <a href="https://www.instagram.com/lowkie_cookie" 
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+          > {t("productPage.addToCart", "Add To Cart")}</a>
               </button>
             </div>
 

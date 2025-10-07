@@ -18,6 +18,8 @@ interface FlavorCardProps {
   index: number;
   hoverIndex: number | null;
   setHoverIndex: (n: number | null) => void;
+
+  isSelling?: boolean;
 }
 
 export default function FlavorCard({
@@ -25,6 +27,7 @@ export default function FlavorCard({
   index,
   hoverIndex,
   setHoverIndex,
+  isSelling = true,
 }: FlavorCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
@@ -108,9 +111,11 @@ export default function FlavorCard({
               isActive
                 ? "bg-black text-white"
                 : "bg-white text-black group-hover:bg-black group-hover:text-white"
-            }`}
+            } ${isSelling ? 'cursor-pointer' : 'opacity-50 cursor-not-allowed!'}
+            `}
+            disabled={!isSelling}
           >
-            {t("product.orderNow")}
+            {isSelling ? t("product.orderNow") : t("product.soldOut")}
           </button>
         </div>
       </div>

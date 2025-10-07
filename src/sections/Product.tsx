@@ -12,10 +12,11 @@ export default function NationalFlavors() {
     id: cookie.id,
     image: cookie.image,
     bgColor: cookie.color,
+    inStock: cookie.inStock,
   }));
 
   return (
-    <section className="py-12 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-[200px]" id="products" >
+    <section className="py-12 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-[200px]" id="flavors" >
       {/* Header */}
       <div className="mb-12">
         <span className="inline-block px-4 py-1 text-sm font-medium bg-pink-200 text-pink-800 rounded-full mb-2">
@@ -33,6 +34,7 @@ export default function NationalFlavors() {
             index={index}
             hoverIndex={hoverIndex}
             setHoverIndex={setHoverIndex}
+            isSelling={item.inStock}
           />
         ))}
       </div>

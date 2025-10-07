@@ -45,7 +45,11 @@ export default function Footer() {
       {/* CTA Button */}
       <div className="mt-6 px-4">
         <button className="bg-crimson text-white font-semibold py-3 px-6 rounded-full w-full max-w-sm mx-auto hover:scale-105 transition">
-          {t("footer.cta")}
+          <a href="https://www.instagram.com/lowkie_cookie" 
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+          >{t("footer.cta")}</a>
         </button>
       </div>
     </footer>

@@ -2,7 +2,11 @@
     "header": {
         "home": "Home",
         "products": "Products",
-        "about": "About us"
+        "about": "About us",
+        "flavors": "Flavors",
+        "fun_fact": "Did you know?",
+        "benefits": "Benefits",
+        "reviews": "Reviews"
     },
     "main": {
         "title": "LOWKIE",
@@ -25,7 +29,8 @@
             "desc": "A gooey cookie packed with milk chocolate chips, topped with semi-sweet chocolate chunks, and finished with a dash of sea salt."
         },
         "learnMore": "Check macro!",
-        "orderNow": "Order Now!"
+        "orderNow": "Order Now!",
+        "soldOut": "Out of stock."
     },
     "qa": {
         "title": "YOU ASK,",
@@ -82,7 +87,7 @@
     "productPage": {
           "servedWarm": "Freshly baked every day",
           "orderNow": "Order now",
-          "addToCart": "Add to cart",
+          "addToCart": "COntact for ordering!",
           "inStock": "In stock",
           "outOfStock": "Out of stock",
           "reviews": "Reviews",
@@ -97,7 +102,7 @@
           "nutritionFacts": "Nutrition Facts"
         },
         "chocolate-chip": {
-            "name": "Chocolate Chip Cookie",
+            "name": "Walnut Chocolate Chip Cookie",
             "desc": "The classic—you can’t go wrong. Thick, soft, and loaded with milk chocolate chips, finished with a cheeky pinch of sea salt to wake up your taste buds."
           },
           "matcha-cheesecake": {

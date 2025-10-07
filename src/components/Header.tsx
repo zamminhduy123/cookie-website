@@ -65,21 +65,30 @@ const Header: React.FC = () => {
         {/* Nav links */}
         <nav className="hidden space-x-10 md:flex">
           {[
-            { to: "/", label: t("header.home") },
+            { to: "#main", label: t("header.home") },
             // { to: "/#products", label: t("header.products") },
-            { to: "/about", label: t("header.about") }
+            { to: "#flavors", label: t("header.flavors") },
+            { to: "#benefits", label: t("header.benefits") },
+            { to: "#reviews", label: t("header.reviews") }
           ].map(({ to, label }) => (
-            <Link
+            <a
               key={to}
-              to={to}
+              onClick={(e) => {
+                e.preventDefault();
+                if (to === "#") {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  return;
+                }
+                document.querySelector(to)?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className={`font-semibold transition-all duration-300 ${
                 isHighlightPath(to)
-                  ? "text-white underline underline-offset-4 scale-105"
+                  ? "text-crimson underline underline-offset-4 scale-105"
                   : "text-crimson hover:text-white hover:underline hover:underline-offset-4 hover:scale-105"
               }`}
             >
               {label}
-            </Link>
+            </a>
           ))}
         </nav>
 
